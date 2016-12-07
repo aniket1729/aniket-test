@@ -1,0 +1,39 @@
+#) NOTE: add ':color desert' in ~/.vimrc to have different color pattern that default
+#) Initially added few files & code changes using normal git commands
+	git status
+	git add [files]
+	git commit -m {"commit \"special\" message"}
+	git log
+#) Inital local branch commit pushing to remote requires
+	git remote add [OPTION]
+   	git push [OPTION]
+   Anytime local branch commits can be pushed to remote, can't use 'git remote add' again. Only requires 'git push'
+   'git remote add [OPTION]' may be adding a mentioned branch to remotei
+   'git push [OPTION]' may be pushing local branch changes to same remote branch 
+#) Changing already 'git add'ed file (but not 'git commit'ed), required again 'git add'.
+   Same 'git status' mentions
+   There can be 1 or more 'git add' before a 'git commit'
+#) 'git commit' to local branch whichever it is.
+   There can be 1 or more 'git commit' before a 'git push'
+#) To change recent commit message, not pushed online(i.e remote)
+	git commit --amend
+#) To change recent commit message, pushed online(i.e remote)
+	git commit --amend
+	git push --force {branch}
+Ref: https://help.github.com/articles/changing-a-commit-message/
+#) To change older/multiple commit messages
+	git rebase -i HEAD~13      # Displays a list of the last 13 commits on the current branch.
+	git push --force
+   But can never have count to include root(i.e. first) commit in this
+#) To change commit message of first commit
+	git rebase -i --root
+	'git rebase -i [commit]'
+Ref: http://stackoverflow.com/questions/11987914/how-do-i-reword-the-very-first-git-commit-message
+#) To store temporary changes safely & revert to last commit
+	git stash
+   To pull back safely stored local changes
+	git stash pop
+   To discard local changes
+	git reset --hard
+Ref: http://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me
+#)
