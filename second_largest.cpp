@@ -1,3 +1,5 @@
+//Implementation to find second maximum in an array efficiently
+
 #include <stdio.h>
 
 const int N = 8;
