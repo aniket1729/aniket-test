@@ -4,6 +4,9 @@
 	git add [files]
 	git commit -m {"commit \"special\" message"}
 	git log
+#) 'git add [file]' to unchanged file doesn't matter and it gets ignored.
+   But simply 'git add' will add all modified & newly created files (even binary/lirabry) file. So don't use it directly.
+#) 'git commit' without any added changes also get ignored.
 #) Inital local branch commit pushing to remote requires
 	git remote add [OPTION]
    	git push [OPTION]
@@ -36,4 +39,7 @@ Ref: http://stackoverflow.com/questions/11987914/how-do-i-reword-the-very-first-
    To discard local changes
 	git reset --hard
 Ref: http://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me
+#) To undo last commit (may be unpublished). Status changes to lst modification.
+	git reset HEAD~
+Ref: http://stackoverflow.com/questions/19303898/how-to-undo-last-commit
 #)
