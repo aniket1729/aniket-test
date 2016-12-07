@@ -1,4 +1,7 @@
-//Implementation of algorithm to find Minimum & Maximum number from an array by less comparison operation
+//Implementation of algorithm to find Minimum & Maximum number from an array
+//Implementation is made effecient to take less comparison operation
+
+//Binary doesn't take any input. Array elements (and size) fixed in code
 
 #include <stdio.h>
 

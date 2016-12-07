@@ -1,3 +1,8 @@
+//Implementation of Segmented Sieve Of Eratosthenes to find prime numbers within 1 to N
+//Implementation is efficient way to get all primes less than N, with less time & space complexity
+
+//Binary takes a non-zero values as input N
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
