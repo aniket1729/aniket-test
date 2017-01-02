@@ -1,4 +1,16 @@
 #) NOTE: add ':color desert' in ~/.vimrc to have different color pattern that default
+#) To know repo url
+   For git,
+	git config --get remote.origin.url
+	git remote -v
+	git remote show origin
+Ref: http://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr
+
+   For hg,
+	hg paths
+	hg paths -q
+	hg paths default
+Ref: http://stackoverflow.com/questions/14771946/how-to-get-remote-server-hg-path
 #) Initially added few files & code changes using normal git commands
 	git status
 	git add [files]
@@ -11,7 +23,7 @@
 	git remote add [OPTION]
    	git push [OPTION]
    Anytime local branch commits can be pushed to remote, can't use 'git remote add' again. Only requires 'git push'
-   'git remote add [OPTION]' may be adding a mentioned branch to remotei
+   'git remote add [OPTION]' may be adding a mentioned branch to remote
    'git push [OPTION]' may be pushing local branch changes to same remote branch 
 #) Changing already 'git add'ed file (but not 'git commit'ed), required again 'git add'.
    Same 'git status' mentions
@@ -43,3 +55,4 @@ Ref: http://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-com
 	git reset HEAD~
 Ref: http://stackoverflow.com/questions/19303898/how-to-undo-last-commit
 #)
+
